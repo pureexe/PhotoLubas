@@ -11,7 +11,6 @@ $(function() {
     $('#imageFile').change( function(event) {
         var fullPath = $('#imageFile').val();
         if(fullPath.substring(fullPath.length-4,fullPath.length)==".png"){
-            console.log(fullPath);
             var fileName = fullPath.split("\\");
             fileName = fileName[fileName.length-1];
             fileName = fileName.substring(0,fileName.length-4);
@@ -44,6 +43,7 @@ $(function() {
                     $("#downloadJson").click(function() {
                         $("#browsePhoto").show();
                         $("#downloadJson").remove();
+                        $("#canvas").html('<canvas style="display:none" id="mycanvas" width="100px" height="100px"></canvas>');
                     });
                 };
         }else{
