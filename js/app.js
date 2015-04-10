@@ -38,7 +38,7 @@ $(function() {
                         }
                     }
                     var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(output));
-                    $("#btnDisplay").append('<a class="btn btn-lg btn-default" id="downloadJson" href="data:' + data + '" download="'+fileName+'.treebuild">Download</a>');
+                    $("#btnDisplay").append('<a class="btn btn-lg btn-default" id="downloadJson" href="data:' + data + '" download="'+fileName+'.lubas">Download</a>');
                     $("#browsePhoto").hide();
                     $("#downloadJson").click(function() {
                         $("#browsePhoto").show();
